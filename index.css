@@ -1,0 +1,375 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #3d3d3d;
+    /* --mdc-theme-primary: #007f8b;
+    --mdc-theme-on-primary: #f1f3f4; */
+  }
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+section{
+  width: fit-content;
+  border: 3px solid #ffffff;
+  margin: 0px 20px;
+  padding: 10px;
+}
+
+/* ======================================= */
+/* =============== HEADER ================ */
+/* ======================================= */
+.nav{
+  width: auto;
+  height: 50px;
+  font-size: 16px;
+  background-color: #3d3d3d;
+}
+
+.nav h1{
+  text-align: center;
+  padding-top: 2px;
+  -webkit-user-select: none!important;
+}
+
+.first-top{
+  display: flex;
+  justify-content: center;
+  margin: 30px 20px;
+}
+
+.FindRobot, .Send{
+  height: 260px;
+}
+
+/* ======================================= */
+/* ======= Find the robot and pair ======= */
+/* ======================================= */
+
+.FindRobot select {
+  width: 130px;
+  height: 30px;
+  border-radius: 6px;
+  outline: none;
+  padding: 2px;
+  cursor: pointer;
+}
+
+/* .FindRobot h2{
+  padding-right: 100px;
+} */
+
+.FindRobot button{
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+  transition: all .25s ease-in;
+}
+
+.FindRobot button:hover{
+  background-color: #9c9c9c;
+  transition: all .25s ease-in;
+}
+
+.FindRobot input{
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+  outline: none;
+  background-color: white;
+}
+
+#pairButton {
+  margin: 20px;
+  width: 307px;
+  height: 45px;
+  background-color: white;
+  color: #3d3d3d;
+  outline: none;
+  border: none;
+  text-align: left;
+  border: 3px white solid;
+  padding-left: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .25s ease-in;
+}
+
+#pairButton:hover{
+  color: white;
+  background-color: #3d3d3d;
+  border: 3px white solid;
+  transition: all .25s ease-in;
+}
+
+/* ======================================= */
+/* ============ Send the media =========== */
+/* ======================================= */
+
+.Send table{
+  height: 200px;
+}
+
+.Send table td:first-child{
+  text-align: right;
+}
+
+.Send table .input{
+  width: 180px;
+}
+
+.Send table .input input{
+  margin-left: 10px;
+  width: 200px;
+  height: 24px;
+  border-radius: 6px;
+  padding: 0 5px;
+  outline: none;
+}
+
+#sendMediaServerInfoButton {
+  margin: 20px;
+  width: 558px;
+  height: 45px;
+  background-color: white;
+  color: #3d3d3d;
+  outline: none;
+  border: none;
+  text-align: left;
+  border: 3px white solid;
+  padding-left: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .25s ease-in;
+}
+
+#sendMediaServerInfoButton:hover{
+  color: white;
+  background-color: #3d3d3d;
+  border: 3px white solid;
+  transition: all .25s ease-in;
+}
+
+/* ======================================= */
+/* =============== REPORT ================ */
+/* ======================================= */
+
+.first-top .text-area{
+  width: 200px;
+}
+
+.first-top textarea{
+  width: 200px;
+  height: 280px;
+  resize: none;
+  border: 3px white solid;
+  background-color: #3d3d3d;
+  color: white;
+}
+
+.first-top .btn-function{
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-top button.openWebSocketButton{
+  width: 95px;
+  height: 45px;
+  background-color: white;
+  color: #3d3d3d;
+  outline: none;
+  border: 3px white solid;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 12px 0;
+  transition: all .25s ease-in;
+}
+
+.first-top button.openWebSocketButton:hover{
+  background-color: #3d3d3d;
+  color: white;
+  border: 3px white solid;
+  transition: all .25s ease-in;
+}
+
+
+.first-top .stopButton{
+  width: 95px;
+  height: 45px;
+  background-color: white;
+  color: #3d3d3d;
+  outline: none;
+  border: 3px white solid;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+.first-top button.stopButton:hover{
+  background-color: #3d3d3d;
+  color: white;
+  border: 3px white solid;
+  transition: all .25s ease-in;
+}
+
+/* ======================================= */
+/* ================ VIDEO ================ */
+/* ======================================= */
+
+.video{
+  border: none;
+  margin: 0 45px;
+}
+
+.section-video{
+  display: flex;
+  justify-content: center;
+}
+
+.video button.btn_enable{
+  width: 700px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #3d3d3d;
+  color: white;
+  border: white 3px solid;
+  border-radius: 0px;
+  transition: all .25s ease-in;
+}
+
+.video button.btn_enable span.mdc-button__label{
+  text-transform: capitalize;
+}
+
+.video button.btn_enable:hover{
+  background-color: white;
+  color: #3d3d3d;
+  transition: all .25s ease-in;
+}
+
+.video .videoView{
+  width: 1130px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px wheat solid; */
+}
+
+.video .videoView p.lbl-WebcamDesktop{
+  width: 400px;
+  height: 37px;
+  padding-top: 4px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #3d3d3d;
+  color: white;
+  border: white 3px solid;
+  cursor: default;
+  -webkit-user-select: none!important;
+}
+
+.section-video .video .videoView .output_canvas{
+  position: absolute;
+  /* border: 1px white solid; */
+  top: 533px;
+}
+
+video {
+  clear: both;
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+/* section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+} */
+
+/* header,
+footer {
+  clear: both;
+} */
+
+/* .removed {
+  display: none;
+} */
+
+/* .invisible {
+  opacity: 0.2;
+} */
+
+/* .note {
+  font-style: italic;
+  font-size: 130%;
+} */
+
+
+
+/* .videoView,
+.detectOnClick {
+  position: relative;
+  float: left;
+  width: 48%;
+  margin: 2% 1%;
+  cursor: pointer;
+} */
+
+/* .videoView p,
+.detectOnClick p {
+  position: absolute;
+  padding: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
+} */
+
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
+}
+
+.canvas {
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+
+.output_canvas {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.detectOnClick {
+  z-index: 0;
+}
+
+.detectOnClick img {
+  width: 100%;
+}

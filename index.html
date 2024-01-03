@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+    <title>Remote AI Hand Gesture Control</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../../../style.css" /> -->
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="nav">
+          <h1>FlyBug Club</h1>
+        </div>
+      </header>
+
+      <main>
+        <div class="first-top">
+          <div>
+            <section class="FindRobot">
+              <h2>Find the robot and pair</h2>
+              <label for="robotSelect">Robot profile</label> <br/>
+              <select id="robotSelect">
+                <option value="ESP_CW_001">ESP_CW_001</option>
+                <option value="RPI_BW_001" selected>RPI_BW_001</option>
+                <option value="RPI_CL_001">RPI_CL_001</option>
+                <option value="RPI_CL_002">RPI_CL_002</option>
+                <option value="RPI_CW_001">RPI_CW_001</option>
+                <option value="RPI_HA_001">RPI_HA_001</option>
+                <option value="RPI_HW_001">RPI_HW_001</option>
+                <option value="JTSN_HW_001">JTSN_HW_001</option>
+              </select>
+              
+              <br />
+              <label for="">Connected Robot</label> <br/>
+              <input
+                type="text"
+                id="robotNameInput"
+                value=""
+                placeholder=""
+                disabled
+              />
+            </section>
+            <button id="pairButton">Get Paired</button>
+          </div>
+          
+          <div>
+            <section class="Send">
+              <h2>Send the media server information to robot</h2>
+              <form>
+                <table>
+                  <tr>
+                    <td><label for="">SSID </label></td>
+                    <td class="input"><input type="text" id="ssidInput" value="Basic Coffee" placeholder="" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Password </label></td>
+                    <td class="input"><input type="password" id="passwordInput" value="" placeholder="" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Host </label></td>
+                    <td class="input"><input type="text" id="hostInput" value="agilertc.com" placeholder="" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Port </label></td>
+                    <td class="input"><input type="number" id="portInput" value="8276" placeholder="" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Channel Name </label></td>
+                    <td class="input"><input type="text" id="channelInput" value="puvop" placeholder="" /></td>
+                  </tr>
+                </table>
+              </form>
+            </section>
+            <button id="sendMediaServerInfoButton">Send</button>
+          </div>
+          <div>
+            <div class="text-area">
+              <textarea
+                disabled
+                name=""
+                id="messageView"
+                cols="20"
+                rows="20"
+              ></textarea>
+              </div>
+              <div class="btn-function">
+                <button class="openWebSocketButton" id="openWebSocketButton">Open</button>
+                <button class="stopButton" id="stopButton">Stop</button>
+              </div>
+          </div>
+        </div>
+        
+        <div class="section-video">
+          <section class="video">          
+            <div id="liveView" class="videoView">
+              <div>
+                <button id="webcamButton" class="mdc-button mdc-button--raised btn_enable">
+                  <span class="mdc-button__ripple"></span>
+                  <span class="mdc-button__label">Enable Camera</span>
+                </button>
+                <div>
+                  <canvas id="canvasElement" width="700" height="400"></canvas>
+                </div>
+              </div>
+  
+              <div>
+                <p class="lbl-WebcamDesktop">Camera Desktop</p>
+                <div>
+                  <video id="webcam" autoplay playsinline width="400" height="400"></video>
+                  <canvas class="output_canvas" id="output_canvas" width="400" height="400"></canvas>
+                </div>
+                
+              </div>
+              <!-- <textarea
+                disabled
+                name=""
+                id="messageView"
+                cols="20"
+                rows="20"
+              ></textarea> -->
+            </div>
+            <!-- <button id="openWebSocketButton">Open</button>
+            <button id="stopButton">Stop</button> -->
+          </section>
+        </div>
+        
+      </main>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
