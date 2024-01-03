@@ -1,5 +1,11 @@
-# Car_HandGesture project
+# Web control Car using HandGesture
 
-Create a robot can move using handgester finger
-<a href="https://github.com/Tr6r/Car_HandGesture/blob/main/Image/robot.png"> </a>
-<img src="https://github.com/Tr6r/Car_HandGesture/blob/main/Image/robot.png" style=""/>
+Development of a Web Gesture-Controlled using Mediapipe Hand Landmarks Detection
+
+# Robot
+<img src="https://github.com/Tr6r/Car_HandGesture/blob/main/Image/robot%20-%20Copy.png" style="height:400px"/>
+
+# hand pose
+
+
+<img src="https://github.com/Tr6r/Car_HandGesture/blob/main/Image/hand.png" style="height:400px"/>
