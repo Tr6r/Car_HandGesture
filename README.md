@@ -9,3 +9,9 @@ Development of a Web Gesture-Controlled using Mediapipe Hand Landmarks Detection
 
 
 <img src="https://github.com/Tr6r/Car_HandGesture/blob/main/Image/hand.png" style="height:400px"/>
+
+# Web control robot
+
+<img src="https://github.com/Tr6r/Car_HandGesture/blob/main/Image/webfontend.png" style="height:400px"/>
+
+
